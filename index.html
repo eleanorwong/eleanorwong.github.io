@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>eleanor wong | engineering physics student at ubc</title>
     <link rel="stylesheet" href="css/app.css" />
+    <link rel="stylesheet" href="fa/css/font-awesome.min.css">
     <script src="bower_components/modernizr/modernizr.js"></script>
     <link href='http://fonts.googleapis.com/css?family=Merriweather:300|Open+Sans:400,300,700|Raleway:400,600' rel='stylesheet' type='text/css'>
   </head>
@@ -14,11 +15,13 @@
     <div class="row">
       <div class="large-6 small-centered columns">
         <div class="row">
-          <div class="small-12 columns" id="logo"></div>
+          <div class="small-12 columns" id="logo">
+            <div id="name"><img src="images/name.png"></div>
+          </div>
           <div class="small-12 columns" id="title">
-            <div id="name">Eleanor Wong</div>
-            <div id="subtitle">engineering physics | ubc</div>
-            <div id="description">Future astronaut-engineer-lawyer-chef who also wants to be a professional gamer. Sees the world through lenses and colours it using infrared and MATLAB</div>
+            <div id="subtitle">engineering physics | ubc </div>
+            <div id="contact"> <i id="menu-button" class="fa fa-envelope"></i> eleanorwong@live.ca | <a href="https://drive.google.com/file/d/0BzF09MZ4E9tNRXlFVlN5dHZzUjA/view?usp=sharing" target="_blank">resume</a></div>
+            <div id="description" class="small-centered columns">Future astronaut-engineer-lawyer-chef who also wants to be a professional gamer. Paints the world using watercolours and MATLAB.</div>
           </div>
         </div>
       </div>
@@ -26,16 +29,133 @@
 
     <div class="row">
       <div id="content" class="large-10 columns small-centered">
-<!--           <ul class="clearing-thumbs small-block-grid-1 medium-block-grid-3" data-clearing>
-            <li><a class="th th-item" href="photos/01.jpg" style="background-image:url('photos/01.jpg');"><img data-caption="caption here..." src="photos/01.jpg" class="transparent"></a></li>
-            <li><a class="th th-item" href="photos/02.jpg" style="background-image:url('photos/02.jpg');"><img data-caption="caption here..." src="photos/02.jpg" class="transparent"></a></li>
-            <li><a class="th th-item" href="photos/03.jpg" style="background-image:url('photos/03.jpg');"><img data-caption="caption here..." src="photos/03.jpg" class="transparent"></a></li>
-            <li><a class="th th-item" href="photos/04.jpg" style="background-image:url('photos/04.jpg');"><img data-caption="caption here..." src="photos/04.jpg" class="transparent"></a></li>
-            <li><a class="th th-item" href="photos/05.jpg" style="background-image:url('photos/05.jpg');"><img data-caption="caption here..." src="photos/01.jpg" class="transparent"></a></li>
 
-          </ul> -->
+        <div id="navigation">
+          <a href="#ui">ui</a> /
+          <a href="#projects">projects</a> /
+          <a href="#photos">photography</a>
+        </div>
 
-          Portfolio coming soon! Check back on January 13, 2014 : )
+        <div class="divider"></div>
+        <div id="ui" name="ui">
+          <h3>user interface</h3>
+            <div id="ui-sailbot" class="ui">
+                          <h5 class="overlay">Mockups</h5>
+              <ul class="clearing-thumbs small-block-grid-2" data-clearing>
+                <li><a href="ui/sailbot/01.jpg"><img data-caption="This is the original mockup for the tracking and home page. I was told to make it simple, classy and modern so I used a minimal colour palette and flat design that is easily ported to mobile devices." src="ui/sailbot/01.jpg"></a></li>
+                <li><a href="ui/sailbot/02.jpg"><img data-caption="And here is the mockup for the about page. I wanted the about page to look almost like a magazine or a storybook that engages the reader to want to learn more about the Sailbots story!" src="ui/sailbot/02.jpg"></a></li>
+              </ul>
+              <h5 class="overlay">Live Screenshots</h5>
+              <ul class="clearing-thumbs small-block-grid-5" data-clearing>
+                <li><a href="ui/sailbot/03.jpg"><img data-caption="Development homepage, featuring statistics about our boat." src="ui/sailbot/03.jpg"></a></li>
+                <li><a href="ui/sailbot/04.jpg"><img data-caption="Development about page. Waiting for content before the text fields can be populated!" src="ui/sailbot/04.jpg"></a></li>
+                <li><a href="ui/sailbot/05.jpg"><img data-caption="Pre-production homepage! The map will be switched to a flatter version like the mockup once we go to production. A detailed map is more useful for testing!" src="ui/sailbot/05.jpg"></a></li>
+                <li><a href="ui/sailbot/06.jpg"><img data-caption="This is what you get to when you click read more! " src="ui/sailbot/06.jpg"></a></li>
+                <li><a href="ui/sailbot/07.jpg"><img data-caption="And here is where you will learn more about our sailbot!" src="ui/sailbot/07.jpg"></a></li>
+              </ul>
+
+              <h4>UBC Sailbot: MicroTransat UI <span class="date">January 2014 - Present</span> <span class="url"><a href="http://ubctransat.com/" target="_blank">ubctransat.com</a></h4>
+
+              NOTE: website not live yet! UBC Sailbots is making a boat that can autonomously travel across the Atlantic! I designed the UI for the boat and how we will track it. This was the first time I actually developed for mobile and used media queries. Core of the UI is a combination of HTML, CSS, JavaScript and Python and it's still an ongoing project that I'm contributing to weekly!
+            </div>
+
+            <div id="ui-smart" class="ui">
+              <ul class="clearing-thumbs small-block-grid-3" data-clearing>
+                <li><a href="ui/smart/01.jpg"><img data-caption="The chat panel can be found on the toolbar! Notification bubbles will appear if there are any unread messages while the panel is closed." src="ui/smart/01.jpg"></a></li>
+                <li><a href="ui/smart/02.jpg"><img data-caption="Different colours for different types of users. Green is for teachers, teal for yourself and orange for other students! I actually don't have another student account so I sent the message through a test account that isn't in the class, that's why he is Unknown User unfortunately. " src="ui/smart/02.jpg"></a></li>
+                <li><a href="ui/smart/03.jpg"><img data-caption="Clicking the GPS marker will take you to the location on the workspace where the message was sent." src="ui/smart/03.jpg"></a></li>
+              </ul>
+
+              <h4>SMART amp: Messaging <span class="date">January 2014 - May 2014</span> <span class="url"><a href="http://smartamp.com">smartamp.com</a></h4>
+
+              SMART Technologies decided to give us interns a project to work on during our co-op term. Our goal was to develop a production level product and we chose to work on a messaging client for SMART amp! This chat client is persistent and has a really neat feature where it attaches the location on the workspace to your chat message, so collboration is a lot easier! I primarily worked on the front-end of this project by designing the UI and programming it in CSS, Ember.JS and HTML.
+            </div>
+
+
+        </div>
+
+        <div class="divider"></div>
+
+        <div id="projects" name="projects">
+          <h3>projects</h3>
+            <div id="proj-jonsnowbot" class="proj">
+
+              <ul class="clearing-thumbs small-block-grid-3" data-clearing>
+                <li><a href="proj/jsb/01.jpg"><img data-caption="A good view of our boat and all the wires and circuits!" src="proj/jsb/01.jpg"></a></li>
+                <li><a href="proj/jsb/02.png"><img data-caption="SolidWorks model of our boat and all its mechanical components" src="proj/jsb/02th.png"></a></li>
+                <li><a href="proj/jsb/03.jpg"><img data-caption="The gorgeous back wheels." src="proj/jsb/03.jpg"></a></li>
+                <li><a href="proj/jsb/04.jpg"><img data-caption="A glimpse of all the circuits we had to build." src="proj/jsb/04.jpg"></a></li>
+                <li><a href="proj/jsb/05.jpg"><img data-caption="Our collecting crane that could pick up magnetic totems!" src="proj/jsb/05.jpg"></a></li>
+                <li><a href="proj/jsb/06.jpg"><img data-caption="Initial sketch of the artifact arm." src="proj/jsb/06th.jpg"></a></li>
+              </ul>
+
+              <h4>You Know Nothing Jon Snow-Bot<span class="date">May 2014 - August 2014</span> <span class="url"><a href="https://jonsnowbot.wordpress.com/">jonsnowbot.wordpress.com</a></h4>
+
+              Thanks to Runor for the SolidWorks model and Bryan for the arm sketch and Etienne for building some of the circuits! Clearly inspired by Game of Thrones, You Know Nothing Jon Snow-bot, or Jon Snow-bot for short, is a tape following, IR detecting and artifact collecting autonomous robot! Go to its dedicated website linked above if you're more curious because it contains a lot more photos and information about our little autonomous robot.
+            </div>
+
+            <div id="proj-compendium" class="proj">
+
+              <ul class="clearing-thumbs small-block-grid-3" data-clearing>
+                <li><a href="proj/comp/01.jpg"><img data-caption="Table of Contents" src="proj/comp/01.jpg"></a></li>
+                <li><a href="proj/comp/02.jpg"><img data-caption="One of the many teachers pages." src="proj/comp/02.jpg"></a></li>
+                <li><a href="proj/comp/03.jpg"><img data-caption="Page dedicated to Camp Squeah." src="proj/comp/03.jpg"></a></li>
+                <li><a href="proj/comp/04.jpg"><img data-caption="Page dedicated the formal and group 4 project." src="proj/comp/04.jpg"></a></li>
+                <li><a href="proj/comp/05.jpg"><img data-caption="Personal pages, one for each member of IB. Here is mine!" src="proj/comp/05.jpg"></a></li>
+                <li><a href="proj/comp/06.jpg"><img data-caption="The closing page. The galaxy in the background is actually painted by myself." src="proj/comp/06.jpg"></a></li>
+              </ul>
+
+              <h4>IB Compendium<span class="date">2012</span> <span class="url"><a href="https://jonsnowbot.wordpress.com/">Download</a></h4>
+
+              Ah, the IB Compendium, my first real graphic design project, and boy have I learned a lot since then. I mean, it is hard to fit so much photos and information on a page. My style has changed and grown but these do still look really nice. All these pages were designed by myself using Adobe Photoshop and the full compendium can be downloaded with the link above!
+            </div>
+
+
+            <div id="proj-other" class="proj">
+
+              <ul class="clearing-thumbs small-block-grid-2" data-clearing>
+                <li><a href="proj/other/01.jpg"><img data-caption="My original website! Design is inspired by the song SAIHATE by Kobayashi Onyx" src="proj/other/01.jpg"></a></li>
+                <li><a href="proj/other/02.jpg"><img data-caption="A fansite for the Hayao Miyazaki film Ponyo" src="proj/other/02.jpg"></a></li>
+              </ul>
+
+              <h4>Misc. Web Design<span class="date">2009-2012</span> </h4>
+
+              
+            </div>
+        </div>
+
+        <div class="divider"></div>
+
+        <div id="photos" name="photos">
+          <h3>some photographs</h3>
+
+            <div id="photos" class="proj">
+
+              <ul class="clearing-thumbs small-block-grid-4" data-clearing>
+                <li><a href="photos/01.jpg"><img data-caption="Self portrait celebrating my favourite team: Alliance" src="photos/01.jpg"></a></li>
+                <li><a href="photos/02.jpg"><img data-caption="Dragon Ball Z inspired shot: Kamehameha!" src="photos/02.jpg"></a></li>
+                <li><a href="photos/03.jpg"><img data-caption="" src="photos/03.jpg"></a></li>
+                <li><a href="photos/04.jpg"><img data-caption="" src="photos/04.jpg"></a></li>
+                <li><a href="photos/05.jpg"><img data-caption="" src="photos/05.jpg"></a></li>
+                <li><a href="photos/06.jpg"><img data-caption="UBC Esports - 1v1 Tournament" src="photos/06.jpg"></a></li>
+                <li><a href="photos/07.jpg"><img data-caption="" src="photos/07.jpg"></a></li>
+                <li><a href="photos/08.jpg"><img data-caption="" src="photos/08.jpg"></a></li>
+                <li><a href="photos/09.jpg"><img data-caption="" src="photos/09.jpg"></a></li>
+                <li><a href="photos/10.jpg"><img data-caption="" src="photos/10.jpg"></a></li>
+                <li><a href="photos/11.jpg"><img data-caption="" src="photos/11.jpg"></a></li>
+                <li><a href="photos/12.jpg"><img data-caption="" src="photos/12.jpg"></a></li>
+                <li><a href="photos/13.jpg"><img data-caption="" src="photos/13.jpg"></a></li>
+                <li><a href="photos/14.jpg"><img data-caption="" src="photos/14.jpg"></a></li>
+                <li><a href="photos/15.jpg"><img data-caption="" src="photos/15.jpg"></a></li>
+                <li><a href="photos/16.jpg"><img data-caption="Umbrella Revolution - Pray for Hong Kong" src="photos/16th.jpg"></a></li>
+
+              </ul>
+
+              <h4>Some Photographs<span class="date">2012-Present</span> </h4>
+
+              
+            </div>
+        </div>
       </div>
 
 

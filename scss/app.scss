@@ -1,3 +1,6 @@
+
+$clearing-caption-padding: 10px 500px 20px 500px;
+
 @import "settings";
 @import "foundation";
 
@@ -19,7 +22,15 @@ body {
 	color: $c-darkgray;
 }
 
+a:link,a:visited,a:active {
+	color: #fc691e;
+	text-decoration: none;
+}
 
+a:hover {
+	color: #b31327;
+	text-decoration: none;
+}
 
 #site {
 	padding: 5em;
@@ -27,19 +38,9 @@ body {
 }
 
 #title {
-	height: 200px;
+	margin-bottom: 0;
 	padding: 0.5em;
 	text-align: center;
-
-	#name {
-		box-sizing: border-box;
-		//padding: 0.5em;
-		font-size: 3em;
-		line-height: 0.9em;
-		font-weight: bold;
-		text-transform: lowercase;
-		color: #fbb25f;
-	}
 
 	#subtitle {
 		margin-top: 0.5em;
@@ -51,10 +52,16 @@ body {
 
 	#description {
 		font-size: 0.8em;
+		line-height: 1.8em;
 		text-transform: none;
 		margin-top: 1em;
 		font-weight: normal;
 	}
+
+	#contact {
+	font-size: 0.75em;
+}
+
 }
 
 #logo {
@@ -67,24 +74,83 @@ body {
 	box-sizing: border-box;
 }
 
+#name {
+	height: 200px;
+	line-height: 200px;
+	text-align: center;
+}
+
+
 #content {
 	font-family: "Merriweather", $ss-font-stack;
-	font-size: 1.1em;
-	line-height: 1.8;
+	font-size: 1em;
+	line-height: 2em;
 	color: $c-font;
 	text-align: justify;
 	clear: left;
 }
 
-.transparent {
-    opacity: 0;
-    filter: alpha(opacity=0);
+#navigation {
+	text-align: center;
+	padding: 1em;
+	font-size: 1.3em;
+	font-style: italic;
+
+	img {
+		height: 2em;
+		margin-left: 4em;
+		margin-right: 4em;
+	}
 }
 
-.th-item{
-    height: 15em;
-    width: 100%;
-    overflow: hidden;
-    background-position: center;
-    background-size: cover;
+.divider {
+	height: 30px;
+	background-image: url('../images/divider.png');
+	width: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+	margin: 10px 0 10px 0;
+}
+
+h3 {
+	text-align: center;
+	color: #eab894;
+	font-family: "Merriweather", $ss-font-stack;
+	font-weight: bold;
+
+	margin-bottom: 10px;
+}
+
+h4 {
+	text-align: center;
+	font-family: "Raleway",$ss-font-stack;
+	color: #749659;
+	font-weight: bold;
+}
+
+.overlay {
+	text-align: left;
+	opacity: 0.8;
+	letter-spacing: 5px;
+	text-transform: lowercase;
+	color: #cc4554;
+	margin-top: 0px;
+}
+
+.date {
+	font-size: 0.8em;
+	color: $c-font;
+	font-family: "Raleway", $ss-font-stack;
+	margin-left: 3em;
+	font-weight: normal;
+}
+
+.ui, .proj {
+	margin-bottom: 3em;
+}
+
+.url {
+	margin-left: 3em;
+	font-family:"Raleway", $ss-font-stack;
+	font-size: 0.8em;
 }
